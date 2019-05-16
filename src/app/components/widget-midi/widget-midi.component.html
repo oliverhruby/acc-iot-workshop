@@ -1,0 +1,17 @@
+<div class="widget">
+	<div>MIDI</div>
+	<div *ngIf="!access">
+		N/A
+	</div>
+	<div *ngIf="access">
+		<div *ngFor="let input of access.inputs">
+			{{input[1].name}}
+		</div>
+		<div class="note">
+			<div>Channel: {{message.Channel}}</div>
+			<div>Status: {{message.Status}}</div>
+			<div>Data 1: {{message.Data1}}</div>
+			<div>Data 2: {{message.Data2}}</div>
+		</div>
+	</div>
+</div>

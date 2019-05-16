@@ -1,0 +1,74 @@
+/* Add application styles & imports to this file! */
+@import '~bootstrap/dist/css/bootstrap.min.css';
+
+div, h1, p {
+  font-family: lato;
+}
+
+svg text {
+  cursor: default;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.dashboard {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.widget {
+  vertical-align: top;
+  height: 220px;
+  padding: 0px;
+  margin: 5px;
+  border: 1px solid #155f08;;
+  background: #072002;
+  resize: both;
+  overflow: auto;
+}
+
+.widget > div:first-child {
+  padding: 3px;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  background: #0e4e01;
+  color: rgb(39, 252, 110);
+  font-size: 11px;
+}
+
+.widget > div:nth-child(2) {
+  padding: 15px;
+}
+
+canvas {
+  outline: none;
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
+}
+
+body {
+  background: #000000;
+  margin: 0 0 0 0;
+  color:yellow;
+}
+
+h1 {
+  margin-top: 0;
+  padding: 10px;
+  background: #0e4e01;
+  color: white;
+}
+
+input, select, button {
+  border: 1px solid #225522;
+  padding: 5px;
+  background: black;
+  margin: 2px;
+  color: white;
+}
+
+body {
+  background: #000000;
+  color: white;
+}

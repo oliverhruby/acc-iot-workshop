@@ -1,0 +1,7 @@
+<div class="widget">
+	<div>Gyroscope</div>
+	<div *ngIf="!acceleration">N/A</div>
+	<div *ngIf="acceleration" style="width:260px">
+		{{orientation | json}} {{acceleration | json}}
+	</div>
+</div>

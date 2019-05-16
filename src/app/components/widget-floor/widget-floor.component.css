@@ -1,0 +1,22 @@
+#walls {
+  fill: white;
+}
+
+@keyframes alarm {
+  0% { opacity: 0.4 }
+  50% { opacity: 1 }
+  100% { opacity: 0.4 }
+}
+
+.alarm {
+  animation: alarm 0.5s infinite;
+  fill: red;
+}
+
+.light {
+  fill: yellow;
+}
+
+.no-style {
+  opacity: 0;
+}

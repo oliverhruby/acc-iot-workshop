@@ -1,0 +1,9 @@
+.widget {
+  font-size: 11px;
+}
+.note {
+  margin-top: 10px;
+  padding: 10px;
+  background: #014206;
+  border-radius: 10px;
+}

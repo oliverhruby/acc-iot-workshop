@@ -1,0 +1,12 @@
+<div class="widget">
+	<div>Web Audio</div>
+  <div>
+    <button class="btn btn-primary btn-sm" (click)="start()">Start</button>
+    <button class="btn btn-primary btn-sm" (click)="stop()">Stop</button>
+    <ng5-slider [(value)]="frequency" [options]="options" (userChange)="setFrequency()"></ng5-slider>
+    <div style="margin-top:25px;">
+      <button class="btn btn-primary btn-sm" (click)="playSample('sample1')">Sample 1</button>
+      <button class="btn btn-primary btn-sm" (click)="playSample('sample2')">Sample 2</button>
+    </div>
+  </div>
+</div>

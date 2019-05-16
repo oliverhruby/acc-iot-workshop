@@ -1,0 +1,10 @@
+<div class="widget">
+	<div>Camera</div>
+	<div>
+		<webcam [height]="120" [width]="200" [trigger]="triggerObservable" *ngIf="showWebcam" (imageCapture)="handleImage($event)"></webcam>
+		<br/>
+			<button class="btn btn-primary btn-sm" (click)="action('analyze')">Analyze</button>
+			<button class="btn btn-primary btn-sm" (click)="action('ocr')">OCR</button>
+      <button class="btn btn-primary btn-sm" (click)="toggle()">Toggle</button>
+	</div>
+</div>

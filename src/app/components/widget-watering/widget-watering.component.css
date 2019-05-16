@@ -1,0 +1,18 @@
+#watering {
+    stroke-width: 0.3;
+    stroke: white;
+    fill: #002200;
+}
+
+#propeller {
+    stroke: none;
+    fill: red;
+}
+
+.water {
+  fill: #0076ca;
+}
+
+#valve1, #valve2, #valve3 {
+  stroke-width: 1px;
+}

@@ -1,0 +1,21 @@
+.button {
+  font-size: 10px;
+  border: 1px solid #446688;
+  padding: 2px;
+  margin: 2px;
+  width: 30px;
+  text-align: center;
+  color: #555555;
+}
+.buttons {
+  display: inline-flex;
+}
+.pressed {
+  background: yellow;
+  color: #334422;
+}
+
+.name {
+  font-size: 10px;
+  margin-bottom: 5px;
+}

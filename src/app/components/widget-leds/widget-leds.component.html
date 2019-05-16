@@ -1,0 +1,9 @@
+<div class="widget">
+	<div>LED</div>
+	<div>
+		<svg width="50" height="150">
+			<circle [attr.id]="'led' + i" [attr.cy]="i*18+10" cx="10" r="8" *ngFor="let led of leds; let i = index" (click)="onClick(i)"
+			 [attr.fill]="'rgb('+ led.r + ',' + led.g +',' + led.b + ')'" stroke="#555555"/>
+		</svg>
+	</div>
+</div>

@@ -1,0 +1,12 @@
+<div class="widget" style="width:300px">
+	<div>Notification</div>
+	<div>
+		<div class="log">
+			<div *ngFor="let message of messages">
+				<div class="timestamp">{{message.date}}</div>
+				<div>{{message.message}}</div>
+			</div>
+		</div>
+		<button class="btn btn-primary btn-sm" (click)="clear()">Clear</button>
+  </div>
+</div>

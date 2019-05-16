@@ -1,0 +1,13 @@
+<div class="widget">
+	<div>Gamepad</div>
+	<div *ngIf="!buttons">N/A</div>
+	<div *ngIf="buttons" style="width:260px">
+    <div class="name">{{name}}</div>
+		<div *ngFor="let button of buttons" class="buttons">
+			<div class="button" [ngClass]="{'pressed': button.pressed}">{{ button.value | number:'1.1-1' }}</div>
+		</div>
+		<div *ngFor="let axis of axes" class="buttons">
+			<div class="button" [ngClass]="{'pressed': axis > 0.5 || axis < -0.5}">{{ axis | number:'1.1-1' }}</div>
+		</div>
+	</div>
+</div>

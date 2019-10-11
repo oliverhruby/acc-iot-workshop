@@ -19,7 +19,7 @@ import { WidgetGamepadComponent } from './components/widget-gamepad/widget-gamep
 import { WidgetGyroscopeComponent } from './components/widget-gyroscope/widget-gyroscope.component';
 import { WidgetLedsComponent } from './components/widget-leds/widget-leds.component';
 import { WidgetLightComponent } from './components/widget-light/widget-light.component';
-import { WidgetMidiComponent } from './components/widget-midi/widget-midi.component';
+//import { WidgetMidiComponent } from './components/widget-midi/widget-midi.component';
 import { WidgetNotificationComponent } from './components/widget-notification/widget-notification.component';
 import { WidgetServoComponent } from './components/widget-servo/widget-servo.component';
 import { WidgetTemperatureComponent } from './components/widget-temperature/widget-temperature.component';
@@ -83,7 +83,7 @@ export function mqttServiceFactory() {
     WidgetGyroscopeComponent,
     WidgetLedsComponent,
     WidgetLightComponent,
-    WidgetMidiComponent,
+    //WidgetMidiComponent,
     WidgetNotificationComponent,
     WidgetServoComponent,
     WidgetTemperatureComponent,

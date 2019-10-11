@@ -1,9 +1,9 @@
-<div class="widget" style="width:250px">
+<div class="widget" style="width:230px">
 	<div>Watering</div>
 	<div>
 		<svg id="watering" version="1.1" viewBox="-2 -1 45 30" xmlns="http://www.w3.org/2000/svg">
 			<rect height="25.57925" id="shaft" width="12.313215" x="0.39796123" y="0.47917798"></rect>
-			<rect height="7.2297764" id="water" class="water" width="12.365181" x="0.34768924" y="19.088366"></rect>
+			<rect [attr.height]="distance/10" id="water" class="water" width="12.365181" x="0.34768924" [attr.y]="26-distance/10"></rect>
 			<g>
 				<rect height="1.835012" id="pumpInput" class="water" transform="rotate(90)" width="8.2489605" x="15.609401" y="-5.3125525"></rect>
 				<g id="pump" class="water" transform="matrix(0,-0.00866323,-0.00844906,0,10.285835,16.387977)">
@@ -90,5 +90,6 @@
 				</g>
 			</g>
 		</svg>
+    {{distance}} cm
 	</div>
 </div>

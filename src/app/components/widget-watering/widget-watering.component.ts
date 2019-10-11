@@ -10,11 +10,16 @@ import { Subscription } from 'rxjs';
 export class WidgetWateringComponent implements OnInit {
 
   status = 0;
+  distance = 0;
+  subscriptionDistance: Subscription;
   subscriptionWatering: Subscription;
 
   constructor(private mqttService: MqttService) { }
 
   ngOnInit() {
+    this.subscriptionDistance = this.mqttService.observe("acc-iot-workshop/distance").subscribe((message: IMqttMessage) => {
+      this.distance = parseInt(message.payload.toString());
+    });
     this.subscriptionWatering = this.mqttService.observe("acc-iot-workshop/watering").subscribe((message: IMqttMessage) => {
       this.status = parseInt(message.payload.toString());
     });
@@ -27,6 +32,7 @@ export class WidgetWateringComponent implements OnInit {
   }
 
   ngOnDestroy() {
+    this.subscriptionDistance.unsubscribe();
     this.subscriptionWatering.unsubscribe();
   }
 }
